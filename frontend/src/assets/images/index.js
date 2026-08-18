@@ -1,6 +1,7 @@
 // Food product images — index
 // Usage: import { burger, pizza } from "./assets/images";
 
+import logo from "./logo.png";
 import bread from "./bread.jpg";
 import burger from "./burger.jpg";
 import chocolateCake from "./chocolate-cake.jpg";
@@ -28,6 +29,7 @@ import tacos from "./tacos.jpg";
 import waffles from "./waffles.jpg";
 
 export {
+  logo,
   bread,
   burger,
   chocolateCake,
