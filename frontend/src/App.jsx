@@ -1,10 +1,9 @@
-import React from 'react';
-import Navbar from "./layouts/Navbar";
+import Nav from "./layouts/Nav";
 
 const App = () => {
   return (
-    <div className="app">
-      <Navbar />
+    <div className="relative">
+      <Nav />
     </div>
   )
 }
