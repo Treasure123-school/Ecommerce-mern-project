@@ -14,11 +14,9 @@ const Navbar = () => {
           <li key={item.label}>
             <a
               href={item.href}
-              className="group relative"
+              className="hover:text-primary"
             >
-              {item.label}
-
-              <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" />
+              {item.label}              
             </a>
           </li>
         ))}
@@ -27,9 +25,9 @@ const Navbar = () => {
       <div className="flex items-center gap-10">
         <img src={searchIcon} alt="searchIcon" className="w-6 h-6" />
 
-        <div>
+        <div className="relative">
           <img src={cartIcon} alt="cartIcon" className="w-6 h-6" />
-          <div className="dot"></div>
+          <div className="flex justify-center items-center text-xs text-white absolute w-4 h-4 top-0 -right-4 rounded-full bg-primary">0</div>
         </div>
         <Button text="Sign in" />
       </div>
