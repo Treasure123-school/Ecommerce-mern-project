@@ -1,9 +1,9 @@
-import Nav from "./layouts/Nav";
+import Navbar from "./layouts/Nav";
 
 const App = () => {
   return (
     <div className="relative">
-      <Nav />
+      <Navbar />
     </div>
   )
 }

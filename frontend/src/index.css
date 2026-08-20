@@ -122,3 +122,11 @@
 @utility info-text {
   @apply font-heading text-text-muted text-lg leading-7;
 }
+
+@utility button-style {
+  @apply bg-primary text-white transition-colors;
+
+  &:hover {
+    @apply bg-primary-dark;
+  }
+}

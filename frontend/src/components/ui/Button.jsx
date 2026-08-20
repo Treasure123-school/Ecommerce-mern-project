@@ -2,7 +2,7 @@
 
 export const Button = ({ text }) => {
   return (
-    <button className="bg-primary py-3 px-8 rounded text-white font-bold hover:text-blue-900">
+    <button className="py-3 px-8 rounded-full font-bold button-style cursor-pointer max-md:hidden">
       {text}
     </button>
   )
