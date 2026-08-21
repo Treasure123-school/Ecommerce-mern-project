@@ -1,15 +1,11 @@
-import { useState } from "react";
-import { logo } from "@/assets/images";
 import { searchIcon, cartIcon } from "@/assets/icons";
 import { Button } from "@/components/ui";
 import { navLinks } from "@/constants"
 
 const Navbar = () => {
   return (
-    <header className="max-container w-full padding-x py-4 flex justify-between items-center">
-      <img src={logo} alt="logo" className="w-25 h-25 object-contain" />
-
-      <ul className="flex max-sm:hidden gap-20 text-text-muted">
+    <nav className="flex sm:flex-1 items-center">
+      <ul className="flex flex-1 justify-center gap-20 max-sm:hidden text-text-muted">
         {navLinks.map((item) => (
           <li key={item.label}>
             <a
@@ -22,7 +18,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-5">
         <img src={searchIcon} alt="searchIcon" className="w-6 h-6" />
 
         <div className="relative">
@@ -31,7 +27,7 @@ const Navbar = () => {
         </div>
         <Button text="Sign in" />
       </div>
-    </header>
+    </nav>
   )
 }
 

@@ -27,6 +27,7 @@ import steak from "./steak.jpg";
 import sushi from "./sushi.jpg";
 import tacos from "./tacos.jpg";
 import waffles from "./waffles.jpg";
+import chickenBurgerAds from "./chicken-burger-ads.jpg";
 
 export {
   logo,
@@ -55,4 +56,5 @@ export {
   sushi,
   tacos,
   waffles,
+  chickenBurgerAds,
 };
