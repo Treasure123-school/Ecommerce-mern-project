@@ -4,8 +4,8 @@ import { navLinks } from "@/constants"
 
 const Navbar = () => {
   return (
-    <nav className="flex sm:flex-1 items-center">
-      <ul className="flex flex-1 justify-center gap-20 max-sm:hidden text-text-muted">
+    <nav className="flex lg:flex-1 items-center">
+      <ul className="flex flex-1 justify-center gap-20 max-lg:hidden text-text-muted">
         {navLinks.map((item) => (
           <li key={item.label}>
             <a
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <div className="relative">
           <img src={cartIcon} alt="cartIcon" className="w-6 h-6" />
-          <div className="flex justify-center items-center text-xs text-white absolute w-4 h-4 top-0 -right-4 rounded-full bg-primary">0</div>
+          <span className="flex justify-center items-center text-xs text-white absolute w-4 h-4 top-0 -right-4 rounded-full bg-primary">0</span>
         </div>
         <Button text="Sign in" />
       </div>
