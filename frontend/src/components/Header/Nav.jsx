@@ -23,7 +23,9 @@ const Navbar = () => {
 
         <div className="relative">
           <img src={cartIcon} alt="cartIcon" className="w-6 h-6" />
-          <span className="flex justify-center items-center text-xs text-white absolute w-4 h-4 top-0 -right-4 rounded-full bg-primary">0</span>
+          <span className="flex justify-center items-center text-xs
+            text-white absolute w-4 h-4 -top-1 -right-1 
+            rounded-full bg-primary border border-background">0</span>
         </div>
         <Button text="Sign in" />
       </div>
