@@ -8,7 +8,7 @@
     min-height: 100dvh;
     font-family: var(--font-sans);
     color: var(--color-text);
-    background-color: var(--color-background);
+    background-color: var(--color-surface-muted);
   }
   
   a {
@@ -132,3 +132,16 @@
     @apply bg-primary-dark;
   }
 }
+
+.scrollbar::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-text-light);
+}
+

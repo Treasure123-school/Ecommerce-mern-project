@@ -1,11 +1,12 @@
 import { searchIcon, cartIcon } from "@/assets/icons";
 import { Button } from "@/components/ui";
-import { navLinks } from "@/constants"
+import { navLinks } from "@/constants";
 
 const Navbar = () => {
   return (
     <nav className="flex lg:flex-1 items-center">
-      <ul className="flex flex-1 justify-center gap-20 max-lg:hidden text-text-muted">
+      <ul className="flex flex-1 justify-center gap-20 max-lg:hidden
+        text-text-muted">
         {navLinks.map((item) => (
           <li key={item.label}>
             <a
@@ -27,7 +28,7 @@ const Navbar = () => {
             text-white absolute w-4 h-4 -top-1 -right-1 
             rounded-full bg-primary border border-background">0</span>
         </div>
-        <Button text="Sign in" />
+        <Button>Sign in</Button>
       </div>
     </nav>
   )
