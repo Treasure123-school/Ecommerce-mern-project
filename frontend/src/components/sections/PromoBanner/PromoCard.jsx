@@ -21,13 +21,13 @@ const PromoCard = ({
       <div className="flex flex-col w-[min(75%,330px)] h-full 
         justify-center px-8 text-white">
 
-        <p className="text-sm text-accent-light uppercase 
-          leading-[2.59]">
+        <p className="text-xs text-accent-light uppercase
+          font-bold tracking-wide leading-[2.59]">
           {eyebrow}
         </p>
 
         <h2 className="font-heading text-[clamp(1.35rem,3vw,2.3rem)] 
-          leading-[1.08]">
+          leading-[1.1]">
           {title}
         </h2>
         <p className="leading-[1.45] mt-1 text-[0.95rem] tracking-tight">

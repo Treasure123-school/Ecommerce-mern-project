@@ -16,24 +16,28 @@ export const statistics = [
 
 export const products = [
   {
-    imgURL: bread,
+    image: bread,
     name: "Bread",
     price: "$200.20",
+    alt: "a very good bread"
   },
   {
-    imgURL: burger,
+    image: burger,
     name: "Burger",
     price: "$210.20",
+    alt: "A very good burger"
   },
   {
-    imgURL: chocolateCake,
+    image: chocolateCake,
     name: "ChocolateCake",
     price: "$220.20",
+    alt: "A very good chocolate cake"
   },
   {
-    imgURL: clubSandwich,
+    image: clubSandwich,
     name: "ClubSandwich",
     price: "$230.20",
+    alt: "A very good clubSandwich"
   },
 ];
 
@@ -54,27 +58,6 @@ export const reviews = [
 
 
 export const footerLinks = [
-  {
-    title: "Products",
-    links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
-    ],
-  },
-  {
-    title: "Help",
-    links: [
-      { name: "About us", link: "/" },
-      { name: "FAQs", link: "/" },
-      { name: "How it works", link: "/" },
-      { name: "Privacy policy", link: "/" },
-      { name: "Payment policy", link: "/" },
-    ],
-  },
   {
     title: "Get in touch",
     links: [
