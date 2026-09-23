@@ -1,5 +1,5 @@
-import { facebookIcon, instagramIcon, shieldTickIcon, supportIcon, truckFastIcon, twitterIcon } from "../assets/icons";
-import { bread, burger, chocolateCake, clubSandwich, coffee, donuts, frenchFries, friedChicken, fruitPlatter, grilledFish, hotDog, iceCream, jollofRice, orangeJuice, pancakes, pasta, pizza, ramen, salad, shawarmaWrap, smoothie, steak, sushi, tacos, waffles } from "../assets/images";
+import { facebookIcon, instagramIcon, twitterIcon } from "../assets/icons";
+import { bread, burger, chocolateCake, clubSandwich, jollofRice, pizza } from "../assets/images";
 
 export const navLinks = [
   { href: "#home", label: "Home" },
