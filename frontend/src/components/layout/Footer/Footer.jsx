@@ -1,4 +1,4 @@
-import Logo from "@/components/sections/Header/Logo";
+import Logo from "@/components/layout/Header/Logo";
 import { footerLinks } from "@/constants";
 import { Link } from 'react-router-dom';
 

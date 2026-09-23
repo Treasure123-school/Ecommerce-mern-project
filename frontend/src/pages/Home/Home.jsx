@@ -1,10 +1,10 @@
-import Header from "@/components/sections/Header/Header";
-import PromoBanner from "@/components/sections/PromoBanner/PromoBanner";
+import Header from "@/components/layout/Header/Header";
+import PromoBanner from "@/components/layout/PromoBanner/PromoBanner";
 import CategorySection from 
-  "@/components/sections/CategorySection/CategorySection";
+  "@/components/layout/CategorySection/CategorySection";
 import FeaturedProduct from 
-  "@/components/sections/FeaturedProducts/FeaturedProducts";
-import Footer from "@/components/sections/Footer/Footer";
+  "@/components/layout/FeaturedProducts/FeaturedProducts";
+import Footer from "@/components/layout/Footer/Footer";
 import { Divider } from "@/components/ui";
 
 const Home = () => {

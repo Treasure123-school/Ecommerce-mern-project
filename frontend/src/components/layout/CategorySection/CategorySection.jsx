@@ -2,7 +2,7 @@ import { categories } from "@/constants/categories";
 import { Scroller } from "@/components/ui";
 import CategoryCard from "./CategoryCard";
 import SectionHeader from 
-  "@/components/sections/SectionHeader/SectionHeader";
+  "@/components/layout/SectionHeader/SectionHeader";
 
 const CategorySection = () => {
   return (

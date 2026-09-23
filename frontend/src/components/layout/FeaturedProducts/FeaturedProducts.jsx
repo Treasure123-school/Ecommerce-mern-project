@@ -1,5 +1,5 @@
 import SectionHeader from
-  "@/components/sections/SectionHeader/SectionHeader";
+  "@/components/layout/SectionHeader/SectionHeader";
 import FeaturedProductsCard from "./FeaturedProductsCard";
 import { products } from "@/constants";
 import { Scroller } from "@/components/ui";
