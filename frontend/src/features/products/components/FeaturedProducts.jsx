@@ -1,5 +1,4 @@
-import SectionHeader from
-  "@/components/layout/SectionHeader/SectionHeader";
+import SectionHeader from "@/components/ui/SectionHeader";
 import FeaturedProductsCard from "./FeaturedProductsCard";
 import { products } from "@/constants";
 import { Scroller } from "@/components/ui";

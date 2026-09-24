@@ -1,10 +1,8 @@
 import Header from "@/components/layout/Header/Header";
-import PromoBanner from "@/components/layout/PromoBanner/PromoBanner";
-import CategorySection from 
-  "@/components/layout/CategorySection/CategorySection";
-import FeaturedProduct from 
-  "@/components/layout/FeaturedProducts/FeaturedProducts";
 import Footer from "@/components/layout/Footer/Footer";
+import PromoBanner from "@/features/promotions/components/PromoBanner";
+import CategorySection from "@/features/categories/components/CategorySection";
+import FeaturedProducts from "@/features/products/components/FeaturedProducts";
 import { Divider } from "@/components/ui";
 
 const Home = () => {
@@ -15,7 +13,7 @@ const Home = () => {
       <Divider />
       <CategorySection />
       <Divider />
-      <FeaturedProduct />
+      <FeaturedProducts />
       <Footer />
     </div>
   )

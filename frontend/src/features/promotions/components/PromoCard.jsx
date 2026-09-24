@@ -1,4 +1,3 @@
-
 const PromoCard = ({
   image,
   alt,

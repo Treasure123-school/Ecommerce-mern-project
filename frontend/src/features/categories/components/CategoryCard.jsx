@@ -1,4 +1,3 @@
-
 const CategoryCard = ({
   image,
   alt,
