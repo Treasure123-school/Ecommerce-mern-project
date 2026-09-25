@@ -25,12 +25,27 @@ const AddToCartButton = () => {
     return (
       <Button
         className="text-sm py-2"
-        onClick={() => console.log("Add to Cart clicked")}
+        onClick={handleAddToCart}
       >
         Add to Cart
       </Button>
     )
   }
+
+  return (
+    <div className="flex items-center justify-between font-bold mx-3 px-3 py-1.5 rounded-full cursor-pointer bg-primary text-white transition-colors whitespace-nowrap"
+    >
+      <button onClick={decreaseQuantity}>
+        -
+      </button>
+        {quantity}
+      <button onClick={increaseQuantity}>
+        +
+      </button>
+    </div>
+
+
+  )
 }
 
 export default AddToCartButton
