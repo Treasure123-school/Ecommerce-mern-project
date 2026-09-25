@@ -1,4 +1,4 @@
-import addToCartButton from "@/features/cart/components/addToCartButton";
+import AddToCartButton from "@/features/cart/components/AddToCartButton";
 
 const FeaturedProductsCard = ({
   image,
@@ -24,12 +24,7 @@ const FeaturedProductsCard = ({
         <p>{price}</p>
       </div>
 
-      <addToCartButton
-        className="text-sm py-2" 
-        onclick={() => console.log("Add to Cart clicked")}
-      >
-        Add to Cart
-      </addToCartButton>
+      <AddToCartButton />
     </article>
   )
 }

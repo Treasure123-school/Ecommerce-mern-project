@@ -2,13 +2,13 @@
 const Button = ({ 
   children,
   className = "",
-  onclick,
+  onClick,
   ...props
 }) => {
   return (
     <button 
       className={`mx-3 rounded-full font-bold cursor-pointer bg-primary hover:bg-primary-dark text-white transition-colors whitespace-nowrap ${className}`}
-      onClick={onclick}
+      onClick={onClick}
       {...props}
     >
       {children}
