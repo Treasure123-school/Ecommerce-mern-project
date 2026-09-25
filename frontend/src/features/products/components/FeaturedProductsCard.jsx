@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui"
+
 const FeaturedProductsCard = ({
   image,
   alt,
@@ -21,6 +23,8 @@ const FeaturedProductsCard = ({
         </h2>
         <p>{price}</p>
       </div>
+
+      <Button>Add to Cart</Button>
     </article>
   )
 }
