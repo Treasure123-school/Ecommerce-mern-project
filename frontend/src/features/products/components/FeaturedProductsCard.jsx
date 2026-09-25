@@ -24,7 +24,7 @@ const FeaturedProductsCard = ({
         <p>{price}</p>
       </div>
 
-      <Button>Add to Cart</Button>
+      <Button className="text-sm py-2">Add to Cart</Button>
     </article>
   )
 }

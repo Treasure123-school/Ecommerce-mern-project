@@ -32,7 +32,7 @@ const Navbar = () => {
             text-white absolute w-4 h-4 -top-1 -right-1 
             rounded-full bg-primary border border-background">0</span>
         </div>
-        <Button>Sign in</Button>
+        <Button className="py-2 px-3 text-sm">Sign in</Button>
       </div>
     </nav>
   )

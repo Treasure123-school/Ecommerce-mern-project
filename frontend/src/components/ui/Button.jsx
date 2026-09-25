@@ -5,7 +5,7 @@ const Button = ({
   
 }) => {
   return (
-    <button className={`py-3 px-8 rounded-full font-bold button-style cursor-pointer bg-primary text-white transition-colors whitespace-nowrap ${className}`}>
+    <button className={`mx-3 rounded-full font-bold cursor-pointer bg-primary hover:bg-primary-dark text-white transition-colors whitespace-nowrap ${className}`}>
       {children}
     </button>
   )
