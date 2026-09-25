@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui"
 import { useState } from "react";
 
-const AddToCartButton = () => {
+const AddToCartButton = ({ product }) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleAddToCart = () => {
-    setQuantity(quantity + 1);
+    console.log(`Added ${product.name} to cart`);
+    setQuantity((currentQuantity) => currentQuantity + 1);
   }
 
   const increaseQuantity = () => {
@@ -17,6 +18,8 @@ const AddToCartButton = () => {
       if (currentQuantity > 0) {
         return currentQuantity - 1;
       }
+
+      return 0;
     });
   }
 
@@ -33,7 +36,7 @@ const AddToCartButton = () => {
   }
 
   return (
-    <div className="flex items-center justify-between font-bold mx-3 px-3 py-1.5 rounded-full cursor-pointer bg-primary text-white transition-colors whitespace-nowrap"
+    <div className="flex items-center justify-between font-bold mx-3 px-3 py-1.5 rounded-full bg-primary text-white"
     >
       <button onClick={decreaseQuantity}>
         -
