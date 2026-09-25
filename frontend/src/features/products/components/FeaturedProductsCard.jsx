@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui"
+import addToCartButton from "@/features/cart/components/addToCartButton";
 
 const FeaturedProductsCard = ({
   image,
@@ -24,12 +24,12 @@ const FeaturedProductsCard = ({
         <p>{price}</p>
       </div>
 
-      <Button 
+      <addToCartButton
         className="text-sm py-2" 
         onclick={() => console.log("Add to Cart clicked")}
       >
         Add to Cart
-      </Button>
+      </addToCartButton>
     </article>
   )
 }
