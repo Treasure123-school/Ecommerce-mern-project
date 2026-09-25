@@ -24,7 +24,10 @@ const FeaturedProductsCard = ({
         <p>{price}</p>
       </div>
 
-      <Button className="text-sm py-2" onclick={() => console.log("Add to Cart clicked")}>
+      <Button 
+        className="text-sm py-2" 
+        onclick={() => console.log("Add to Cart clicked")}
+      >
         Add to Cart
       </Button>
     </article>

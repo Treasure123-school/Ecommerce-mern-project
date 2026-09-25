@@ -14,6 +14,7 @@ const CategorySection = () => {
       <Scroller>
         {categories.map(category => (
           <CategoryCard 
+            key={category.id}
             image={category.image}
             alt={category.alt}
             categoryName={category.name}
