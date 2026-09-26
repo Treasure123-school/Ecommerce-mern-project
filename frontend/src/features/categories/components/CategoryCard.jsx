@@ -4,16 +4,13 @@ const CategoryCard = ({
   categoryName
 }) => {
   return (
-    <article className="flex flex-col shrink-0 
-      w-[min(50vw,150px)] min-h-[150px] overflow-hidden rounded-3xl
-      snap-start p-2 bg-white border border-[#ebebeb]">
+    <article className="flex w-[min(42vw,200px)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-background p-2 sm:w-[min(28vw,230px)]">
       <img
         src={image}
         alt={alt}
-        className="w-full rounded-3xl object-cover mb-1.5"
+        className="mb-3 aspect-square w-full rounded-xl object-cover"
       />
-      <h2 className="hover:text-primary text-center 
-        text-[clamp(0.87rem,1vw,3rem)] font-bold">
+      <h2 className="pb-2 text-center text-sm font-bold hover:text-primary sm:text-base">
         {categoryName}
       </h2>
     </article>

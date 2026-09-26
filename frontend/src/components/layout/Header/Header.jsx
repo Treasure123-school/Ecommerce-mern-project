@@ -1,12 +1,11 @@
 import Logo from "./Logo";
 import Navbar from "./Nav";
 
-const Header = () => {
+const Header = ({ cartCount = 0 }) => {
   return (
-    <header className="max-container w-full padding-x py-4 
-      max-sm:py-px flex justify-between items-center">
+    <header className="max-container flex w-full items-center justify-between gap-4 py-2 sm:py-3">
       <Logo />
-      <Navbar />
+      <Navbar cartCount={cartCount} />
     </header>
   )
 }

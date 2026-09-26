@@ -3,10 +3,9 @@ import FeaturedProductsCard from "./FeaturedProductsCard";
 import { products } from "@/constants";
 import { Scroller } from "@/components/ui";
 
-const FeaturedProducts = ({ cart, addToCart }) => {
+const FeaturedProducts = ({ cart, addToCart, updateCartQuantity }) => {
   return (
-    <section className="bg-background w-[min(100%-1rem,1280px)]
-      mx-auto mb-8">
+    <section id="products" className="max-container mb-10 sm:mb-14">
       <div>
         <SectionHeader
           title="Featured Products"
@@ -20,6 +19,7 @@ const FeaturedProducts = ({ cart, addToCart }) => {
               product={product}
               cart={cart}
               addToCart={addToCart}
+              updateCartQuantity={updateCartQuantity}
             />
           ))}
         </Scroller>

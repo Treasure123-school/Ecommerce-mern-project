@@ -5,7 +5,7 @@ import CategoryCard from "./CategoryCard";
 
 const CategorySection = () => {
   return (
-    <section className="w-[min(100%-1rem,1280px)] mx-auto my-8">
+    <section id="categories" className="max-container my-8 sm:my-12">
       <SectionHeader 
         title="Categories"
         subTitle="Explore our food collections"

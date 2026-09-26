@@ -20,14 +20,26 @@ const App = () => {
       return [...prevCart, {...product, quantity: 1 }];
     });
 
-    console.log(cart);
   };
+
+  const updateCartQuantity = (productId, quantity) => {
+    setCart((prevCart) => prevCart
+      .map((item) => item.id === productId ? { ...item, quantity } : item)
+      .filter((item) => item.quantity > 0)
+    );
+  };
+
+  const removeFromCart = (productId) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  };
+
+  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <div className="relative">
       <Routes>
-        <Route path="/" element={<Home cart={cart} addToCart={addToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} />} />
+        <Route path="/" element={<Home cart={cart} cartCount={cartCount} addToCart={addToCart} updateCartQuantity={updateCartQuantity} />} />
+        <Route path="/cart" element={<Cart cart={cart} updateCartQuantity={updateCartQuantity} removeFromCart={removeFromCart} />} />
         <Route path="/order" element={<Order />} />
       </Routes>
     </div>

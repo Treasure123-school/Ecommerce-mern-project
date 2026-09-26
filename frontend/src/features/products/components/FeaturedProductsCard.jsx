@@ -1,27 +1,25 @@
 import AddToCartButton from "@/features/cart/components/AddToCartButton";
 
-const FeaturedProductsCard = ({ cart, addToCart, product }) => {
+const FeaturedProductsCard = ({ cart, addToCart, updateCartQuantity, product }) => {
   return (
     <article
-      className="flex flex-col shrink-0 
-      w-[min(50vw,150px)] min-h-[150px] overflow-hidden rounded-3xl
-      snap-start bg-white border border-[#ebebeb] pb-3"
+      className="flex w-[min(48vw,220px)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-background pb-3 sm:w-[min(28vw,250px)]"
     >
-      <img src={product.image} alt={product.alt} className="w-full object-cover mb-1.5" />
+      <img src={product.image} alt={product.alt} className="mb-3 aspect-[4/3] w-full object-cover" />
 
-      <div className="ml-4">
+      <div className="mx-4 mb-4 flex-1">
         <h2
-          className="hover:text-primary text-[clamp(0.87rem,1vw,3rem)] 
-          font-bold"
+          className="font-heading text-sm font-bold hover:text-primary sm:text-base"
         >
           {product.name}
         </h2>
-        <p>{product.price}</p>
+        <p className="mt-1 text-sm font-semibold text-secondary">{product.price}</p>
       </div>
 
       <AddToCartButton
         cart={cart}
         addToCart={addToCart}
+        updateCartQuantity={updateCartQuantity}
         product={product}
       />
     </article>

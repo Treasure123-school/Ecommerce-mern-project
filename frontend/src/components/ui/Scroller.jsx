@@ -1,9 +1,7 @@
 
 const Scroller = ({ children }) => {
   return (
-    <div className="scrollbar flex gap-[0.6rem] 
-      overflow-x-auto snap-x snap-mandatory py-[0.6rem] scrollbar-thin 
-      [scrollbar-color:var(--color-text-light)_transparent]">
+    <div className="scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain px-1 py-3 [scrollbar-color:var(--color-text-light)_transparent] [scrollbar-width:thin]">
       {children}
     </div>
   )

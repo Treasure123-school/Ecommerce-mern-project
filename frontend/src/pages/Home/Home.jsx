@@ -5,15 +5,17 @@ import CategorySection from "@/features/categories/components/CategorySection";
 import FeaturedProducts from "@/features/products/components/FeaturedProducts";
 import { Divider } from "@/components/ui";
 
-const Home = ({ cart, addToCart }) => {
+const Home = ({ cart, cartCount, addToCart, updateCartQuantity }) => {
   return (
-    <div>
-      <Header />
+    <div className="bg-surface-muted">
+      <Header cartCount={cartCount} />
+      <main id="home">
       <PromoBanner />
       <Divider />
       <CategorySection />
       <Divider />
-      <FeaturedProducts cart={cart} addToCart={addToCart} />
+      <FeaturedProducts cart={cart} addToCart={addToCart} updateCartQuantity={updateCartQuantity} />
+      </main>
       <Footer />
     </div>
   )

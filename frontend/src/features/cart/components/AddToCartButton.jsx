@@ -1,26 +1,18 @@
 import { Button } from "@/components/ui"
-import { useState } from "react";
 
-const AddToCartButton = ({ product, cart, addToCart }) => {
-  const [quantity, setQuantity] = useState(0);
+const AddToCartButton = ({ product, cart, addToCart, updateCartQuantity }) => {
+  const quantity = cart.find((item) => item.id === product.id)?.quantity ?? 0;
 
   const handleAddToCart = () => {
-    setQuantity((currentQuantity) => currentQuantity + 1);
     addToCart(product);
   }
 
   const increaseQuantity = () => {
-    setQuantity((currentQuantity) => currentQuantity + 1);
+    updateCartQuantity(product.id, quantity + 1);
   }
 
   const decreaseQuantity = () => {
-    setQuantity((currentQuantity) => {
-      if (currentQuantity > 0) {
-        return currentQuantity - 1;
-      }
-
-      return 0;
-    });
+    updateCartQuantity(product.id, quantity - 1);
   }
 
 
@@ -38,11 +30,11 @@ const AddToCartButton = ({ product, cart, addToCart }) => {
   return (
     <div className="flex items-center justify-between font-bold mx-3 px-3 py-1.5 rounded-full bg-primary text-white"
     >
-      <button onClick={decreaseQuantity}>
+      <button type="button" onClick={decreaseQuantity} aria-label={`Decrease ${product.name} quantity`}>
         -
       </button>
         {quantity}
-      <button onClick={increaseQuantity}>
+      <button type="button" onClick={increaseQuantity} aria-label={`Increase ${product.name} quantity`}>
         +
       </button>
     </div>
