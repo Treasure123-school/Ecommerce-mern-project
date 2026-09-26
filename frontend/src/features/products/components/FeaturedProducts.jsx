@@ -17,10 +17,6 @@ const FeaturedProducts = ({ cart, addToCart }) => {
           {products.map(product => (
             <FeaturedProductsCard
               key={product.name}
-              image={product.image}
-              alt={product.alt}
-              name={product.name}
-              price={product.price}
               product={product}
               cart={cart}
               addToCart={addToCart}

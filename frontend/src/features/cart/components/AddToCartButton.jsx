@@ -5,8 +5,8 @@ const AddToCartButton = ({ product, cart, addToCart }) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleAddToCart = () => {
-    addToCart(product);
     setQuantity((currentQuantity) => currentQuantity + 1);
+    addToCart(product);
   }
 
   const increaseQuantity = () => {

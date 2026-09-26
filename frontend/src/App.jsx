@@ -9,8 +9,6 @@ const App = () => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.id === product.id);
 
-      console.log(existingItem);
-
       if (existingItem) {
         return prevCart.map((item) =>
           item.id === product.id
@@ -19,10 +17,10 @@ const App = () => {
         );
       }
 
-      console.log(prevCart);
-
-      return [...prevCart, { ...product, quantity: 1 }];
+      return [...prevCart, {...product, quantity: 1 }];
     });
+
+    console.log(cart);
   };
 
   return (
