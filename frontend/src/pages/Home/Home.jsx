@@ -5,7 +5,7 @@ import CategorySection from "@/features/categories/components/CategorySection";
 import FeaturedProducts from "@/features/products/components/FeaturedProducts";
 import { Divider } from "@/components/ui";
 
-const Home = () => {
+const Home = ({ cart, addToCart }) => {
   return (
     <div>
       <Header />
@@ -13,7 +13,7 @@ const Home = () => {
       <Divider />
       <CategorySection />
       <Divider />
-      <FeaturedProducts />
+      <FeaturedProducts cart={cart} addToCart={addToCart} />
       <Footer />
     </div>
   )

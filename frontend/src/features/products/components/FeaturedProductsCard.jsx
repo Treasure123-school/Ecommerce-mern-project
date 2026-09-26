@@ -1,6 +1,6 @@
 import AddToCartButton from "@/features/cart/components/AddToCartButton";
 
-const FeaturedProductsCard = ({ image, alt, name, price }) => {
+const FeaturedProductsCard = ({ image, alt, name, price, cart, addToCart }) => {
   return (
     <article
       className="flex flex-col shrink-0 
@@ -20,6 +20,8 @@ const FeaturedProductsCard = ({ image, alt, name, price }) => {
       </div>
 
       <AddToCartButton
+        cart={cart}
+        addToCart={addToCart}
         product={{
           image,
           alt,

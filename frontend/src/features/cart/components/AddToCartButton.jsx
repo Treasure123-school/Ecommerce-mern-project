@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui"
 import { useState } from "react";
 
-const AddToCartButton = ({ product }) => {
+const AddToCartButton = ({ product, cart, addToCart }) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleAddToCart = () => {
-    console.log(`Added ${product.name} to cart`);
+    addToCart(product);
     setQuantity((currentQuantity) => currentQuantity + 1);
   }
 
