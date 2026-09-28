@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
 @import "tailwindcss";
 
 @custom-variant hover (&:hover);
@@ -7,8 +7,8 @@
   body {
     min-height: 100dvh;
     font-family: var(--font-sans);
-    color: var(--color-text);
-    background-color: var(--color-surface-muted);
+    color: var(--color-ink);
+    background-color: var(--color-cream);
   }
   
   a {
@@ -18,9 +18,15 @@
 }
 
 @theme {
-  --color-primary: #E85D04;
-  --color-primary-dark: #C94F03;
-  --color-primary-light: #FF7A1A;
+
+
+  --color-orange:#E8622C;
+  --color-orange-dark:#D4531F;
+  --color-ink-deep:#241F1A;
+  --color-gold:#F2A93B;
+  --color-inactive:#E4D3C2;
+  --color-cream-soft: #FCF3EB;
+  --color-cream: #F8ECE3;
 
   --color-secondary: #2D6A4F;
   --color-secondary-dark: #1F4D3A;
@@ -35,6 +41,8 @@
   --color-text: #1F2937;
   --color-text-muted: #6B7280;
   --color-text-light: #9CA3AF;
+  --color-ink-soft:#4A4540;
+  --color-ink:#231F1B;
 
   --color-border: #E5E7EB;
 
@@ -44,7 +52,7 @@
   --color-info: #2563EB;
 
   --font-sans: "Inter", sans-serif;
-  --font-heading: "Poppins", sans-serif;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
 
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;

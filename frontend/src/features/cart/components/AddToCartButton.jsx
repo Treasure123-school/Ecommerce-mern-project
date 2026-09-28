@@ -28,7 +28,7 @@ const AddToCartButton = ({ product, cart, addToCart, updateCartQuantity }) => {
   }
 
   return (
-    <div className="flex items-center justify-between font-bold mx-3 px-3 py-1.5 rounded-full bg-primary text-white"
+    <div className="flex items-center justify-between font-bold mx-3 px-3 py-1.5 rounded-full bg-orange text-white"
     >
       <button type="button" onClick={decreaseQuantity} aria-label={`Decrease ${product.name} quantity`}>
         -

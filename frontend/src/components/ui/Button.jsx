@@ -7,7 +7,7 @@ const Button = ({
 }) => {
   return (
     <button 
-      className={`mx-3 rounded-full font-bold cursor-pointer bg-primary hover:bg-primary-dark text-white transition-colors whitespace-nowrap ${className}`}
+      className={`mx-3 rounded-full font-bold cursor-pointer bg-orange hover:bg-orange-dark text-white transition-colors whitespace-nowrap ${className}`}
       onClick={onClick}
       {...props}
     >

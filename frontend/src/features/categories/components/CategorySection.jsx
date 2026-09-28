@@ -8,10 +8,10 @@ const CategorySection = () => {
     <section id="categories" className="max-container my-8 sm:my-12">
       <SectionHeader 
         title="Categories"
-        subTitle="Explore our latest collections"
+        subTitle="Explore our style collections"
       />
-      
-      <Scroller>
+
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-2">
         {categories.map(category => (
           <CategoryCard 
             key={category.id}
@@ -20,7 +20,8 @@ const CategorySection = () => {
             categoryName={category.name}
           />
         ))}
-      </Scroller>
+      </div>
+
     </section>
   )
 }

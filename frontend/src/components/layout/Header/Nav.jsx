@@ -3,7 +3,7 @@ import { Button } from "@/components/ui";
 import { navLinks } from "@/constants";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ cartCount = 0 }) => {
+const Navbar = () => {
   return (
     <nav className="flex items-center gap-3 sm:flex-1 sm:justify-end sm:gap-5">
       <ul
@@ -11,7 +11,7 @@ const Navbar = ({ cartCount = 0 }) => {
       >
         {navLinks.map((item) => (
           <li key={item.label}>
-            <a href={item.href} className="hover:text-primary">
+            <a href={item.href} className="hover:text-orange">
               {item.label}
             </a>
           </li>
@@ -24,12 +24,12 @@ const Navbar = ({ cartCount = 0 }) => {
         </button>
 
         <div className="relative">
-          <Link to="/cart" aria-label={`Cart, ${cartCount} items`} className="flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white">
+          <Link to="/cart" aria-label={`Cart, 0 items`} className="flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white">
             <img src={cartIcon} alt="" className="size-5" />
             <span
-              className="absolute -right-0.5 -top-0.5 flex size-[18px] items-center justify-center rounded-full border border-background bg-primary text-[10px] font-bold text-white"
+              className="absolute -right-0.5 -top-0.5 flex size-[18px] items-center justify-center rounded-full border border-background bg-orange text-[10px] font-bold text-white"
             >
-              {cartCount > 99 ? "99+" : cartCount}
+              0
             </span>
           </Link>
         </div>

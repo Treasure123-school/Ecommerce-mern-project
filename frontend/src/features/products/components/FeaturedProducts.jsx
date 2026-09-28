@@ -3,7 +3,7 @@ import FeaturedProductsCard from "./FeaturedProductsCard";
 import { products } from "@/constants";
 import { Scroller } from "@/components/ui";
 
-const FeaturedProducts = ({ cart, addToCart, updateCartQuantity }) => {
+const FeaturedProducts = ({ cart, addToCart }) => {
   return (
     <section id="products" className="max-container mb-10 sm:mb-14">
       <div>
@@ -19,7 +19,6 @@ const FeaturedProducts = ({ cart, addToCart, updateCartQuantity }) => {
               product={product}
               cart={cart}
               addToCart={addToCart}
-              updateCartQuantity={updateCartQuantity}
             />
           ))}
         </Scroller>

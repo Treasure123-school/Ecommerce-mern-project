@@ -9,7 +9,7 @@ const FeaturedProductsCard = ({ cart, addToCart, updateCartQuantity, product }) 
 
       <div className="mx-4 mb-4 flex-1">
         <h2
-          className="font-heading text-sm font-bold hover:text-primary sm:text-base"
+          className="font-heading text-sm font-bold hover:text-orange sm:text-base"
         >
           {product.name}
         </h2>
