@@ -8,7 +8,7 @@ const CategorySection = () => {
     <section id="categories" className="max-container my-8 sm:my-12">
       <SectionHeader 
         title="Categories"
-        subTitle="Explore our food collections"
+        subTitle="Explore our latest collections"
       />
       
       <Scroller>

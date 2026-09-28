@@ -1,24 +1,33 @@
-import { bread, burger, chocolateCake, clubSandwich } from "../assets/images";
+import {
+  greenLoafer,
+  tanToteBag,
+  blackLeatherWatch,
+  goldHoopEarrings,
+} from "../assets/images";
 
 export const categories = [
   {
-    image: bread,
-    alt: "bread with a nice body color",
-    name: "Bread"
+    id: "footwear",
+    image: greenLoafer,
+    alt: "Dark green leather loafer",
+    name: "Footwear"
   },
   {
-    image: burger,
-    alt: "burger with a nice body color",
-    name: "Burger"
+    id: "bags",
+    image: tanToteBag,
+    alt: "Tan leather tote bag",
+    name: "Bags"
   },
   {
-    image: chocolateCake,
-    alt: "chocolateCake with a nice body color",
-    name: "ChocolateCake"
+    id: "watches",
+    image: blackLeatherWatch,
+    alt: "Black leather wristwatch with a light dial",
+    name: "Watches"
   },
   {
-    image: clubSandwich,
-    alt: "clubSandwich with a nice body color",
-    name: "ClubSandwich"
+    id: "accessories",
+    image: goldHoopEarrings,
+    alt: "Pair of gold hoop earrings",
+    name: "Accessories"
   }
 ]

@@ -1,32 +1,37 @@
-import { bread, burger, chocolateCake, clubSandwich } from "../assets/images";
+import {
+  whitePlatformSneaker,
+  brownHandbag,
+  goldWatch,
+  blackLeatherJacket,
+} from "../assets/images";
 
 export const products = [
   {
-    id: "bread",
-    image: bread,
-    name: "Bread",
+    id: "white-platform-sneaker",
+    image: whitePlatformSneaker,
+    name: "White Platform Sneakers",
     price: "$200.20",
-    alt: "a very good bread",
+    alt: "White platform sneaker displayed on a stand",
   },
   {
-    id: "burger",
-    image: burger,
-    name: "Burger",
+    id: "brown-handbag",
+    image: brownHandbag,
+    name: "Structured Brown Handbag",
     price: "$210.20",
-    alt: "A very good burger",
+    alt: "Structured brown leather handbag",
   },
   {
-    id: "chocolate-cake",
-    image: chocolateCake,
-    name: "ChocolateCake",
+    id: "gold-watch",
+    image: goldWatch,
+    name: "Gold Dress Watch",
     price: "$220.20",
-    alt: "A very good chocolate cake",
+    alt: "Gold wristwatch with a dark leather strap",
   },
   {
-    id: "club-sandwich",
-    image: clubSandwich,
-    name: "ClubSandwich",
+    id: "black-leather-jacket",
+    image: blackLeatherJacket,
+    name: "Black Leather Jacket",
     price: "$230.20",
-    alt: "A very good clubSandwich",
+    alt: "Black leather jacket displayed on a hanger",
   },
 ];
