@@ -25,7 +25,7 @@ const PromoCard = ({
           {eyebrow}
         </p>
 
-        <h2 className="font-heading text-[clamp(1.35rem,3vw,2.3rem)] 
+        <h2 className="font-heading font-bold whitespace-nowrap text-[clamp(1.35rem,3vw,2.3rem)] 
           leading-[1.1]">
           {title}
         </h2>

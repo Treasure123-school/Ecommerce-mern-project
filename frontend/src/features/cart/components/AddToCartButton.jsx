@@ -1,18 +1,22 @@
 import { Button } from "@/components/ui"
 
-const AddToCartButton = ({ product, cart, addToCart, updateCartQuantity }) => {
-  const quantity = cart.find((item) => item.id === product.id)?.quantity ?? 0;
+const AddToCartButton = ({ product, cart, addToCart }) => {
+  import [ quantity, ]
 
   const handleAddToCart = () => {
     addToCart(product);
   }
 
-  const increaseQuantity = () => {
-    updateCartQuantity(product.id, quantity + 1);
+  const increaseQuantity = (currentQuantity) => {
+    setQuantity(currentQuantity + 1);
   }
 
-  const decreaseQuantity = () => {
-    updateCartQuantity(product.id, quantity - 1);
+  const decreaseQuantity = (currentQuantity) => {
+    if (currentQuantity > 0) {
+      setQuantity(currentQuantity - 1);
+    }
+
+    return 0
   }
 
 

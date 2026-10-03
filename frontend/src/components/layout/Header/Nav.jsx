@@ -1,4 +1,5 @@
-import { searchIcon, cartIcon } from "@/assets/icons";
+import { FaSearch } from "react-icons/fa";
+import { IoMdCart } from "react-icons/io";
 import { Button } from "@/components/ui";
 import { navLinks } from "@/constants";
 import { Link } from "react-router-dom";
@@ -20,12 +21,12 @@ const Navbar = () => {
 
       <div className="flex items-center gap-3 sm:gap-5">
         <button type="button" aria-label="Search" title="Search" className="flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white">
-          <img src={searchIcon} alt="" className="size-5" />
+          <FaSearch className="size-4 text-text-muted" />
         </button>
 
         <div className="relative">
           <Link to="/cart" aria-label={`Cart, 0 items`} className="flex size-10 items-center justify-center rounded-full transition-colors hover:bg-white">
-            <img src={cartIcon} alt="" className="size-5" />
+            <IoMdCart className="size-4 text-text-muted" />
             <span
               className="absolute -right-0.5 -top-0.5 flex size-[18px] items-center justify-center rounded-full border border-background bg-orange text-[10px] font-bold text-white"
             >

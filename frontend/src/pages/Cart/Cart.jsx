@@ -1,6 +1,5 @@
 import Header from "@/components/layout/Header/Header";
 import Footer from "@/components/layout/Footer/Footer";
-import { cartIcon, minusIcon, plusIcon, trashIcon, truckFastIcon } from "@/assets/icons";
 import { Link } from "react-router-dom";
 
 const Cart = ({ cart }) => {

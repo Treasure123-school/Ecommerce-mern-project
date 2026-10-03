@@ -1,5 +1,4 @@
 import { categories } from "@/constants/categories";
-import { Scroller } from "@/components/ui";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CategoryCard from "./CategoryCard";
 
